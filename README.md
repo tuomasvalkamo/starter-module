@@ -1,3 +1,7 @@
+<img src="https://gitlab.com/saltstack/open/salt-branding-guide/-/raw/master/logos/SaltProject_altlogo_teal.png" width="300"/>
+
+<br>
+
 # Salt starter pack module
 
 Salt module that installs and configures a starter pack of programs. Get a quick start on your Linux Debian-based machine.
