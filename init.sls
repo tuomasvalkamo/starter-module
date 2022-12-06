@@ -1,13 +1,14 @@
-# Update packages
 apt-get update:
   cmd.run
 
-# Install packages
 ufw:
   pkg.installed
 
 micro:
   pkg.installed
+
+export EDITOR=micro:
+  cmd.run
 
 curl:
   pkg.installed
@@ -27,16 +28,20 @@ mitmproxy:
 apache2:
   pkg.installed
 
+openssh-server:
+  pkg.installed
+
+openssh-server:
+  service.running
+
+# Replace Apache default page
+/var/www/html/index.html:
+  file.managed:
+    - source: salt://starter-module/index.html
+
 # Configure and enable firewall
 ufw allow 22/tcp:
   cmd.run
 
 ufw enable:
   cmd.run
-
-export EDITOR=micro:
-  cmd.run
-
-/var/www/html/index.html:
-  file.managed:
-    - source: salt://starter-module/index.html
