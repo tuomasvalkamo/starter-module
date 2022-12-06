@@ -7,7 +7,12 @@ ufw:
 micro:
   pkg.installed
 
-export EDITOR=micro:
+# Set editor to micro
+~/.bashrc:
+  file.managed:
+    - source: salt://starter-module/micro/.bashrc
+
+source ~/.bashrc:
   cmd.run
 
 curl:
@@ -37,7 +42,7 @@ ssh:
 # Replace Apache default page
 /var/www/html/index.html:
   file.managed:
-    - source: salt://starter-module/index.html
+    - source: salt://starter-module/apache2/index.html
 
 # Configure and enable firewall
 ufw allow 22/tcp:
