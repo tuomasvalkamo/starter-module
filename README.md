@@ -8,7 +8,7 @@ GNU General Public License v3.0.
 
 ## Requirements
 
-This module has been tested on Debian Linux. For UFW, Uncomplicated Firewall, the directory for configurations varies between Linux distributions. If you wish to use this module on other distributions, change the path where the modified rules are saved to, to an approriate one. Other critical differences might exist.
+This module has been tested on Debian Linux. For UFW (Uncomplicated Firewall), the directory for configurations varies between Linux distributions. If you wish to use this module on other distributions, change the path where the modified rules are saved to, to an approriate one. Other critical differences might exist.
 
 ## How to use
 
