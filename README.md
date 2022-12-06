@@ -48,12 +48,18 @@ A hands-on test would be establishing an SSH connection to the minion machine.
 
 1. Install openssh-client
 
-    $ sudo apt-get update
-    $ sudo apt-get install openssh-client
+```
+$ sudo apt-get update
+$ sudo apt-get install openssh-client
+```
 
 2. Connect to the minion machine
 
-   $ ssh user@IP_address
+```
+$ ssh user@IP_address
+```
+
+If you are able to connect, you know that at least the SSH service was installed and enabled.
 
 ## What it does
 
