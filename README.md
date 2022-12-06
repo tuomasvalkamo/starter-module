@@ -1,6 +1,6 @@
 # Salt starter pack module
 
-Salt module that installs and configures a starter pack of programs. Use to get a quick start on your Linux Debian-based machine.
+Salt module that installs and configures a starter pack of programs. Get a quick start on your Linux Debian-based machine.
 
 ## Licence
 
