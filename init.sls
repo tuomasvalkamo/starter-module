@@ -1,17 +1,24 @@
-apt-get update:
-  cmd.run
-
+# Configure and enable firewall
 ufw:
   pkg.installed
 
+# Allow 22/tcp
+/etc/ufw/user.rules:
+  file.managed:
+    - source: salt://starter-module/ufw/user.rules
+
+ufw enable:
+  cmd.run
+
+# Set editor to micro
 micro:
   pkg.installed
 
-# Set editor to micro
 /etc/profile.d/editor-config.sh:
   file.managed:
     - source: salt://starter-module/micro/editor-config.sh
 
+# Install packages
 curl:
   pkg.installed
 
@@ -27,23 +34,16 @@ netcat:
 mitmproxy:
   pkg.installed
 
-apache2:
-  pkg.installed
-
 openssh-server:
   pkg.installed
 
 ssh:
   service.running
 
+apache2:
+  pkg.installed
+
 # Replace Apache default page
 /var/www/html/index.html:
   file.managed:
     - source: salt://starter-module/apache2/index.html
-
-# Configure and enable firewall
-ufw allow 22/tcp:
-  cmd.run
-
-ufw enable:
-  cmd.run
