@@ -1,18 +1,18 @@
-<img src="https://gitlab.com/saltstack/open/salt-branding-guide/-/raw/master/logos/SaltProject_altlogo_teal.png" width="300"/>
-
-<br>
-
 # Salt starter pack module
 
-Salt module that installs and configures a starter pack of programs. Get a quick start on your Linux Debian-based machine.
+Salt module that installs and configures a starter pack of programs. Get a quick start on your Linux machine.
 
 ## Licence
 
 GNU General Public License v3.0.
 
+<br>
+
+<img src="SaltProject_altlogo_teal.png" width="350"/>
+
 ## Requirements
 
-This module has been tested on Debian Linux. For UFW (Uncomplicated Firewall), the directory for configurations varies between Linux distributions. If you wish to use this module on other distributions, change the path where the modified rules are saved to, to an approriate one. Other critical differences might exist.
+This module has been tested on Linux Debian 11. For UFW (Uncomplicated Firewall), the directory for configurations varies between Linux distributions. If you wish to use this module on other distributions, change the path where the modified rules are saved to, to an approriate one. Other critical differences might exist.
 
 ## How to use
 
