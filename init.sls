@@ -2,10 +2,14 @@
 ufw:
   pkg.installed
 
-# Allow 22/tcp
+# Allow 22/tcp and 80/tcp
 /etc/ufw/user.rules:
   file.managed:
     - source: salt://starter-module/ufw/user.rules
+
+/etc/ufw/user6.rules:
+  file.managed:
+    - source: salt://starter-module/ufw/user6.rules
 
 ufw enable:
   cmd.run
