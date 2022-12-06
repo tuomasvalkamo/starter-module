@@ -31,7 +31,7 @@ apache2:
 openssh-server:
   pkg.installed
 
-openssh-server:
+ssh:
   service.running
 
 # Replace Apache default page
