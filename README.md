@@ -79,7 +79,7 @@ UFW is configured to allow 22/tcp (SSH) and 80/tcp (HTTP) traffic. Micro is set 
 
 ---
 
-This module was made as an assignment in the [Content Management Systems](https://terokarvinen.com/2022/palvelinten-hallinta-2022p2/) -course at Haaga-Helia University of Applied Sciences.
+This module was made as an assignment in the [Configuration Management Systems](https://terokarvinen.com/2022/palvelinten-hallinta-2022p2/) -course at Haaga-Helia University of Applied Sciences.
 
 Previous assignments:
 
