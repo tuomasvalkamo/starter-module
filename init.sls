@@ -8,12 +8,9 @@ micro:
   pkg.installed
 
 # Set editor to micro
-~/.bashrc:
+/etc/profile.d/editor-config.sh:
   file.managed:
-    - source: salt://starter-module/micro/.bashrc
-
-source ~/.bashrc:
-  cmd.run
+    - source: salt://starter-module/micro/editor-config.sh
 
 curl:
   pkg.installed
