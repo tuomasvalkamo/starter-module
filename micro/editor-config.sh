@@ -1,4 +1,4 @@
 #! /usr/bin/bash
 
-EDITOR=micro
-SUDO_EDITOR=micro
+export EDITOR=micro
+export SUDO_EDITOR=micro
