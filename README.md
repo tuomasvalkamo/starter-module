@@ -2,6 +2,8 @@
 
 Salt module that installs and configures a starter pack of programs. Get a quick start on your Linux machine.
 
+**Read my [report](https://tuomasvalkamo.com/how-to-create-your-own-salt-module/) on the creation process of this module.**
+
 ## Licence
 
 GNU General Public License v3.0.
